@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Codifik</title>
+</head>
+
+<body>
+
+    
+    
+<div class="container"  >
+    
+    <form class="mess">
+        <h1>Codificador</h1><br>
+        <h4>Descodificador</h4>
+
+       
+
+        <label for="escrvMensage"></label>
+        <input type="text" id="escrvMensage" placeholder="Escreva sua mensagem"><br>
+
+            <select id="opcoesCod">
+                <option value="EsolhaUmaOpcao"> Escolha uma opção </option>
+                <option value="cifraDeCesar"> Cifra de César </option>
+                <option value="base64"> Base 64 </option>
+            </select>
+       
+        <input type="number" id="incremento" placeholder="Número" min="1" max="25">
+
+        <br><br>
+
+        <div class="radio">  
+           <input type="radio" id="codificar"  name="cod_or_descod" value="rdCodificar" checked>
+           <label for="codificar" id="lbcodificar"> Codificar </label>
+
+           <input type="radio" id="decodificar"  name="cod_or_descod" value="rdDecodificar" checked>
+           <label for="decodificar" id="lbdecodificar"> Decodificar </label>
+        </div>
+
+        <br>
+
+        <input type="submit" id="submit" value="Codifica!">
+        <input type="submit" id="submit" value="Decodifica!">
+
+        <div>
+            <p class="mensage_cod"></p>
+        </div>
+        
+    </form>
+</div>
+
+<script src="JavaScript/codifik.js"></script>
+
+</body>
+</html>
